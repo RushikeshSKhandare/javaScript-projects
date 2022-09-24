@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#ChatApp{
+    border: 20px;
+    background-color: rgb(238, 147, 29);
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    height: 80px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logoutbutton{
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+#box{
+    margin: auto;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    height: 70vh;
+    width: 65%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    background-color: salmon;
+    padding: 20px;
+
+}
+
+#othersmsg{
+  
+    display: flex;
+    gap: 10px;
+    /* align-items: center;
+    justify-content: center; */
+   
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    
+    
+}
+#userimg{
+    width: 35px;
+    border-radius: 50%;
+    height: 35px;
+    
+}
+#usermsg{
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid rgb(87, 98, 36);
+    color: rgb(12, 13, 23);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+#mymsg{
+    border: 2px solid blue(237, 8, 8);
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+
+}
+#mytext{
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid rgb(87, 98, 36);
+    color: rgb(23, 12, 23);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    justify-content: right;
+    gap: 10px;
+  
+}
+#myname{
+    /* border: 2px solid red; */
+    margin-left: 70%;
+   
+}
+
+#smallboxnew{
+    /* border: 5px solid rgb(12, 234, 171);
+    border-radius: 10px; */
+}
+
+#rightboxnew{
+    border: 5px solid darkgreen;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#message{
+    border: 1px solid red;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    height: auto;
+    width: 500px;
+
+}
+#fname{
+    width: 58%;
+    height: 70px;
+    position: relative;
+    left: 319px;
+    /* border: 3px solid #0c1401; */
+    border-radius: 30px;
+    margin-bottom: 10px;
+ 
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+   
+    
+}
+
+.inputtext{
+    width: 87%;
+    height: 60px;
+    border: none;
+    outline: none;
+    /* margin-right: 40px; */
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+    background-color: rgb(111, 166, 182);
+}
+#btn{
+    width: 7%;
+    height: 30px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+/* #form{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    height: auto;
+    width: 100px;
+} */
