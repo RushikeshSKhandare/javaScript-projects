@@ -6,11 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chat-App</title>
-  <link rel="stylesheet" href="index.css" />
+ 
 </head>
+<link rel="stylesheet" href="index.css" /> 
+<script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-auth-compat.js"></script>
+<script src="index.js"></script>
 
 <body>
-
   <div id="ChatApp">
     <h1>Chat App</h1>
   </div>
@@ -28,28 +32,13 @@
           <label for="lastname">Last Name:-</label>
           <input type="text" name="lastname" id="lastname" placeholder="lastname" value="" /><br /><br /><br />
         </div>
+       
 
-        <button onclick="myfunc()" id="submit">Submit</button>
+          <button onclick="myfunc()" id="submit"> Submit </button>
+  
       </div>
       <h4>Click the "Submit" Button</h4>
     </div>
-
   </div>
 </body>
-<script type="text/javascript">
-  function myfunc() {
-    // storing the input data in variables
-    var firstname = document.getElementById("firstname").value;
-    var lastname = document.getElementById("lastname").value;
-
-    // storig the data in local storage in from of json
-    localStorage.setItem("firstname", JSON.stringify(firstname));
-    localStorage.setItem("lastname", JSON.stringify(lastname));
-
-
-// redirecting my paage to new page
-
-    window.location.assign( `/chat.html`)
-  }
-</script>
 </html>

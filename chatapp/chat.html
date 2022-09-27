@@ -1,87 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Group Chat</title>
-    <link rel="stylesheet" href="chat.css">
-</head>
+    <link rel="stylesheet" href="chat.css" />
+    <!-- <script src="index.js"></script> -->
+  </head>
+  <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-auth-compat.js"></script>
+  <script src="index.js"></script>
 
-<body>
+  <body>
     <div id="ChatApp">
-        <h1>Chat App</h1>
-        <a href="./index.html">
-            <button class="logoutbutton">Logout</button>
-        </a>
+      <h1>Chat App</h1>
+      <a href="./index.html">
+        <button class="logoutbutton">Logout</button>
+      </a>
     </div>
     <div id="container">
-        <div id="box">
-            <div id="othersmsg">
-
-                <img src="https://spng.pngfind.com/pngs/s/176-1760995_png-file-svg-user-icon-free-copyright-transparent.png"
-                    alt="user_name" id="userimg" />
-                <div id="usermsg">
-                    <small>user_name</small>
-                    <p>This is Users Message For Everyone !</p>
-                </div>
-            </div>
-            <div id="mymsg">
-
-                <div id="mytext">
-                    <small id="myname">my_name</small>
-                    <p>This is My message For Users or to Everyone !</p>
-                </div>
-                <img src="https://spng.pngfind.com/pngs/s/176-1760995_png-file-svg-user-icon-free-copyright-transparent.png"
-                    alt="user_name" id="userimg" />
-            </div>
-            <div id="othersmsg">
-
-                <img src="https://spng.pngfind.com/pngs/s/176-1760995_png-file-svg-user-icon-free-copyright-transparent.png"
-                    alt="user_name" id="userimg" />
-                <div id="usermsg">
-                    <small>user_name</small>
-                    <p>This is Users Message For Everyone !</p>
-                </div>
-
-            </div>
-            <div id="mymsg">
-
-                <div id="mytext">
-                    <small id="myname">my_name</small>
-                    <p>This is My message For Users to Everyone !</p>
-                </div>
-                <img src="https://spng.pngfind.com/pngs/s/176-1760995_png-file-svg-user-icon-free-copyright-transparent.png"
-                    alt="user_name" id="userimg" />
-            </div>
-            <div id="othersmsg">
-
-                <img src="https://spng.pngfind.com/pngs/s/176-1760995_png-file-svg-user-icon-free-copyright-transparent.png"
-                    alt="user_name" id="userimg" />
-                <div id="usermsg">
-                    <small>user_name</small>
-                    <p>This is Users Message For Everyone !</p>
-                </div>
-
-            </div>
-        </div>
-        <!-- <div id="message"> <h2>Message</h2> -->
-        <div id="fname">
-
-            <input class="inputtext" type="text" value="" placeholder="Type a Message">
-
-            <button onclick="myfunc()" id="btn">Send</button>
-
-        </div>
+      <div id="box">
+        <div id="othersmsg">
+          <!-- <img src="https://spng.pngfind.com/pngs/s/176-1760995_png-file-svg-user-icon-free-copyright-transparent.png"
+            alt="user_name"
+            id="userimg"/>
+          <div id="usermsg">
+            <small>user_name</small>
+            <p>This is Users Message For Everyone !</p>
+          </div> -->
+        </div> -->
+        <!-- <div></div> -->
+      </div>
+      <div id="fname">
+        <input
+          class="inputtext"
+          type="text"
+          value=""
+          placeholder="Type a Message"
+          id="textarea"/>
+        <button onclick="myfunc1()" id="btn">Send
+        </button>
+      </div>
     </div>
-</body>
-<script type="text/javascript">
-    function myfunc() {
-        var firstname = document.getElementById("firstname").value;
-
-    }
-
-</script>
-
+  </body>
 </html>

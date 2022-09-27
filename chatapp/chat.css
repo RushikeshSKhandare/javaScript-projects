@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#ChatApp{
+#ChatApp {
     border: 20px;
     background-color: rgb(238, 147, 29);
     display: flex;
@@ -14,91 +14,109 @@
     align-items: center;
     margin-bottom: 10px;
 }
-.logoutbutton{
+
+.logoutbutton {
     padding: 5px 10px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
-#box{
+#container {
     margin: auto;
-    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(199, 199, 199);
+    position: relative;
+}
+#box {
+    margin: auto;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 20px;
     height: 70vh;
-    width: 65%;
+    width: 70%;
     overflow-y: scroll;
-    overflow-x: hidden;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
+    /* overflow-x: scroll; */
+    display: flex;
+    flex-direction: column;
     background-color: salmon;
     padding: 20px;
+    position: relative;
+    word-wrap: break-word;
+}
+#box::-webkit-scrollbar {
+    width: 5px;
+  height: 8px;
+  /* background-color: red;  */
 
 }
+#box::-webkit-scrollbar-thumb {
+    background: rgb(11, 11, 11);
+    border-radius: 5px;
+  }
 
-#othersmsg{
-  
+#othermsg {
+    position: relative; 
+    flex-direction: row;
+    float: left;
     display: flex;
-    gap: 10px;
-    /* align-items: center;
-    justify-content: center; */
-   
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
-    
-    
+    margin-bottom: 13px;
+    gap: 13px;
+
 }
-#userimg{
+
+#userimg {
+    border: 2px solid rgb(3, 3, 10);
     width: 35px;
     border-radius: 50%;
     height: 35px;
-    
+
 }
-#usermsg{
+
+#usermsg {
     border-radius: 10px;
+    /* display: flex; */
     padding: 5px;
     border: 2px solid rgb(87, 98, 36);
     color: rgb(12, 13, 23);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-#mymsg{
-    border: 2px solid blue(237, 8, 8);
+/* #othermsg{
     display: flex;
-    gap: 10px;
+    margin-bottom: 13px;
+    gap: 13px;
+} */
+
+.mydiv {
+    position: relative;
+    /* width: 100%; */
+    float: right;
+}
+
+.mymsg {
+    display: flex;
+    /* float: right; */
     justify-content: end;
-
 }
-#mytext{
-    border-radius: 10px;
+
+#mytext {
     padding: 5px;
-    border: 2px solid rgb(87, 98, 36);
+    width: max-content;
+    display: flex;
+    gap: 13px;
     color: rgb(23, 12, 23);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    justify-content: right;
-    gap: 10px;
-  
-}
-#myname{
-    /* border: 2px solid red; */
-    margin-left: 70%;
-   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
 }
 
-#smallboxnew{
-    /* border: 5px solid rgb(12, 234, 171);
-    border-radius: 10px; */
+#mytext div {
+    border-radius: 15px;
+    padding: 8px;
+    border: 2px solid rgb(87, 98, 36);
+    
 }
 
-#rightboxnew{
-    border: 5px solid darkgreen;
-    border-radius: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
-#message{
+#message {
     border: 1px solid red;
     margin-top: 12px;
     display: flex;
@@ -109,24 +127,20 @@
     width: 500px;
 
 }
-#fname{
+
+#fname {
     width: 58%;
     height: 70px;
-    position: relative;
-    left: 319px;
-    /* border: 3px solid #0c1401; */
     border-radius: 30px;
-    margin-bottom: 10px;
- 
     justify-content: space-between;
     display: flex;
-    margin-top: 20px;
+    margin: 20px auto;
     align-items: center;
-   
-    
+
+
 }
 
-.inputtext{
+.inputtext {
     width: 87%;
     height: 60px;
     border: none;
@@ -136,12 +150,14 @@
     padding-left: 10px;
     background-color: rgb(111, 166, 182);
 }
-#btn{
+
+#btn {
     width: 7%;
     height: 30px;
     border-radius: 40px;
     cursor: pointer;
 }
+
 /* #form{
     margin-top: 12px;
     display: flex;
